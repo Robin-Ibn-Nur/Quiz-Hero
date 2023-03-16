@@ -39,7 +39,7 @@
     </script>
 </head>
 
-<body class="bg-white font-common">
+<body class="font-common">
     <header class="h-16 flex items-center shadow-sm">
         <nav class="flex justify-between items-center w-9/12 mx-auto">
             <div class="text-zinc-800 font-bold uppercase">
@@ -78,7 +78,7 @@
                         <path fill-rule="evenodd"
                             d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
                             clip-rule="evenodd"></path>
-                    </svg> What is Flowbite?</span>
+                    </svg>Here are the differences between "map()", "filter()", "forEach()", and "find()"</span>
                 <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -89,12 +89,27 @@
         </h2>
         <div id="accordion-open-body-1" class="hidden" aria-labelledby="accordion-open-heading-1">
             <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive
-                    components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
-                <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a
-                        href="/docs/getting-started/introduction/"
-                        class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing
-                    websites even faster with components on top of Tailwind CSS.</p>
+                <p class="mb-2">
+                <ol class="pl-5  text-white mt-2 space-y-1 list-decimal list-inside">
+                    <li>The "map()" function creates a new array by applying a function to each element of an existing
+                        array. It returns an array
+                        of the same length as the original array, with each element transformed by the function. The
+                        original array is not
+                        modified.</li>
+                    <li>The "filter()" function creates a new array by filtering out elements from an existing array
+                        based on a condition
+                        specified by a function. It returns an array containing only the elements that pass the test.
+                        The original array is not
+                        modified.</li>
+                    <li>The "forEach()" function applies a function to each element of an array. It does not create a
+                        new array and does not
+                        return anything. The purpose of forEach() is to perform an operation on each element of an
+                        array.</li>
+                    <li>The "find()" function returns the value of the first element in an array that satisfies a
+                        provided condition. It returns
+                        undefined if no element satisfies the condition.</li>
+                </ol>
+                </p>
             </div>
         </div>
         <h2 id="accordion-open-heading-2">
@@ -107,7 +122,7 @@
                         <path fill-rule="evenodd"
                             d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
                             clip-rule="evenodd"></path>
-                    </svg>Is there a Figma file available?</span>
+                    </svg>Difference between "local storage", "session storage", "cookies".</span>
                 <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -117,12 +132,30 @@
             </button>
         </h2>
         <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
-            <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the
-                    Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-                <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/"
-                        class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the
-                    utility classes from Tailwind CSS and components from Flowbite.</p>
+            <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                <p class="mb-2">
+                <ol class="pl-5  text-white mt-2 space-y-1 list-decimal list-inside">
+                    <li> <span class="font-bold">Local storage</span> is a type of web storage that allows websites to
+                        store data in the user's browser.
+                        It is designed to store
+                        data that will persist even after the user has closed the browser window. It is typically used
+                        for offline applications,
+                        since data stored in local storage is not sent to the server with each HTTP request.</li>
+                    <li> <span class="font-bold">Session storage</span> is a type of web storage that allows websites to
+                        store data in the user's
+                        browser that is only available
+                        for the current session. It is typically used for online applications where the data needs to be
+                        available for the
+                        duration of the user's session.</li>
+                    <li><span class="font-bold">Cookies</span> are small text files stored on the user's computer that
+                        are used to store data that the website can read. They
+                        are typically used for authentication, storing user preferences, and tracking user activity.
+                        Unlike local storage and
+                        session storage, cookies are sent with each HTTP request, so they can be used to store data that
+                        needs to be sent to the
+                        server.</li>
+                </ol>
+                </p>
             </div>
         </div>
         <h2 id="accordion-open-heading-3">
@@ -135,7 +168,7 @@
                         <path fill-rule="evenodd"
                             d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
                             clip-rule="evenodd"></path>
-                    </svg> What are the differences between Flowbite and Tailwind UI?</span>
+                    </svg>what is even loop and how does it work?</span>
                 <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -145,22 +178,13 @@
             </button>
         </h2>
         <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
-            <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from
-                    Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another
-                    difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers
-                    sections of pages.</p>
-                <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite,
-                    Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best
-                    of
-                    two worlds.</p>
-                <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-                <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
-                    <li><a href="https://flowbite.com/pro/"
-                            class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
-                    <li><a href="https://tailwindui.com/" rel="nofollow"
-                            class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
-                </ul>
+            <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                <p class="mb-2 text-white">
+                An even loop is a type of loop in programming that allows code to be executed multiple times until a certain condition
+                is met. This type of loop is called an even loop because it will only execute the code if the looping variable is an
+                even number. The looping variable is usually a counter that starts at zero and is incremented by two until it reaches a
+                predetermined number. The code inside the loop will be executed each time the looping variable is an even number.
+                </p>
             </div>
         </div>
     </div>
