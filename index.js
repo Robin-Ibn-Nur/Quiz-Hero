@@ -70,7 +70,7 @@ const displayQuiz = (data) => {
     <p class="text-gray-800 text-sm">${question}</p>
   </div>
   <div class="grid grid-cols-2 gap-4 mt-5">
-    ${displayQuizOptions(quiz.options, i)}
+    ${displayQuizOptions(options, i)}
   </div>
 </div>`;
   });
