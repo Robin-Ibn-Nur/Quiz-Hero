@@ -59,7 +59,7 @@ const displayQuiz = (data) => {
   }
 
   data.forEach((quiz, i) => {
-    const { question, options}=quiz
+    const { question, options } = quiz
     quizContainer.innerHTML += `<div class="m-3 py-3 px-4 shadow-sm rounded">
   <div class="flex items-center">
     <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3">
@@ -91,6 +91,7 @@ document.querySelector("#submit").addEventListener("click", () => {
     color: "",
   };
 
+
   for (let ans of answers) {
     if (ans.answer === ans.givenAns) {
       totalMark += 10;
@@ -108,7 +109,7 @@ document.querySelector("#submit").addEventListener("click", () => {
     grade.color = "text-red-600";
   }
 
-  // data setting on local storage and getting data from local storage
+  // data set and get from local storage
   let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
     localStorage.setItem(
@@ -147,16 +148,15 @@ document.querySelector("#submit").addEventListener("click", () => {
     </h1>
     <p class="text-sm flex justify-center items-center gap-2">
       Total Time: <span class="text-xl text-orange-500">${timeTaken.innerText.replace(
-        "sec",
-        ""
-      )}<span class="text-xs">sec</span></span>
+      "sec",
+      ""
+    )}<span class="text-xs">sec</span></span>
     </p>
   </div>
   
   <button onclick="location.reload();" class="bg-green-600 text-white w-full py-2 rounded mt-16">Restart</button>
-  ${
-    storage
-      ? `<div class="mt-5">
+  ${storage
+        ? `<div class="mt-5">
       <h1 class="text-center">Previous Submissions <button class="text-blue-800 text-xs" onclick={localStorage.clear();location.reload()}>Clear History</button></h1>
     <div
     class="flex justify-between items-center border rounded p-2 my-2 shadow-sm font-medium">
@@ -165,18 +165,18 @@ document.querySelector("#submit").addEventListener("click", () => {
     <div>Time</div>
     </div>
     ${storage
-      ?.reverse()
-      ?.map(
-        (item) => `<div
+          ?.reverse()
+          ?.map(
+            (item) => `<div
       class="flex justify-between items-center border rounded p-2 my-2 shadow-sm">
       <div>${item.marks}/60</div>
       <div>${item.status}</div>
       <div>${item.examTime}</div>
       </div>`
-      )
-      ?.join("")}`
-      : ""
-  }
+          )
+          ?.join("")}`
+        : ""
+      }
   </div>
   `;
 
